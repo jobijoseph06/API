@@ -11,7 +11,7 @@ url = ("https://newsapi.org/v2/everything?"
 
 request = requests.get(url)
 content = request.json()
-print(content)
+
 
 body = ""
 
