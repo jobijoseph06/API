@@ -12,7 +12,7 @@ def fetch_news(topic):
 
     url = (
         f"https://newsapi.org/v2/everything?"
-        f"q={topic}&from={from_date}&"
+        f"q={topic}&"
         f"sortBy=publishedAt&apiKey={API_KEY}&language=en"
     )
     response = requests.get(url)
