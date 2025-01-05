@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from datetime import datetime, timedelta
+
 from send_email import send_email
 
 
@@ -9,7 +9,7 @@ API_KEY = "bc07434d1e9a420cb0983d8f5ac3b60a"
 
 # Function to fetch news articles
 def fetch_news(topic):
-    from_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+
     url = (
         f"https://newsapi.org/v2/everything?"
         f"q={topic}&from={from_date}&"
