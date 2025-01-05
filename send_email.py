@@ -19,7 +19,7 @@ def send_email(message, receiver_mail):
     my_context = ssl.create_default_context()
     with smtplib.SMTP_SSL(host, port, context=my_context) as server:
         server.login(username, password)
-        server.sendmail(username, receiver_mail, message)
+        server.sendmail(username, receiver_mail, message.encode("utf-8"))
 
 
 

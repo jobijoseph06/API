@@ -28,8 +28,8 @@ def main():
     st.write("Get the latest news articles on any topic of your choice!")
 
     # User inputs for topic and email
-    topic = st.text_input("Enter the topic you are interested in:", "technology")
-    receiver_email = st.text_input("Enter the receiver's email address:", "example@example.com")
+    topic = st.text_input("Enter the topic you are interested in:", placeholder="eg.technology, tesla")
+    receiver_email = st.text_input("Enter the receiver's email address:", placeholder="user@gmail.com")
 
     if st.button("Fetch News and Send Email"):
         if topic.strip() and receiver_email.strip():
