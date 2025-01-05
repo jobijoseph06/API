@@ -7,7 +7,6 @@ This Python project automates the process of fetching the latest news articles b
 
 ## 🚀 Features
 - Fetches top news articles on a user-defined topic.
-- Retrieves articles from the past 30 days, sorted by publication date.
 - Sends an email summary with article titles, descriptions, and URLs.
 - Implements error handling for API requests and email sending.
 
